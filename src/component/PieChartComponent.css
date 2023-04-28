@@ -1,0 +1,23 @@
+.pie-chart-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "chart" "legend";
+  }
+  
+  @media (min-width: 768px) {
+    .pie-chart-container {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "chart legend";
+    }
+  }
+  
+  .pie-chart {
+    grid-area: chart;
+    min-height: 300px;
+    max-height: 800px;
+  }
+  
+  .legend {
+    grid-area: legend;
+  }
+  
