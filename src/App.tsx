@@ -33,7 +33,7 @@ const App: React.FC = () => {
         );
 
         const transformedData = filteredData.map((item: any) => ({
-          label: `${item.code} (Cap: $${item.cap.toLocaleString()}, Vol: $${item.volume.toLocaleString()})`,
+          label: `${item.code} (Cap: $${item.cap.toLocaleString()}, Vol: $${item.volume.toLocaleString()}), Price: $${item.rate.toLocaleString()}, Month: ${item.delta.month.toLocaleString()}`,
           sales: item.cap,
         }));
 
